@@ -1,0 +1,29 @@
+.container div{
+    font-size: 2rem;
+}
+
+.container div:hover{
+    background-color: thistle;
+}
+
+body{
+    background-color: wheat;
+}
+
+.header{
+    background-color: skyblue;
+    color: white;
+}
+.content{
+    background-color: turquoise;
+    color: white;
+}
+
+.menu{
+    background-color: tomato;
+    color: white;
+}
+.footer{
+    background-color: lightyellow;
+    color: white;
+}
