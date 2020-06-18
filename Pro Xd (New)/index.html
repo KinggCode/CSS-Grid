@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Portal</title>
+
+
+
+    <!-- Main Styling -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- JQuery (necessary for Bootstrap's Javascript Plugin -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<!--HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--if lt IE 9]>
+<script src="https://oss.maxcdn.com/htmlshiv/3.7.2/html5shiv.min.js" type="text/javascript">
+<script src="https://oss.maxcdn.com/htmlshiv/1.4.2/respond.min.js" type="text/javascript">
+</script>
+
+<![endif]-->
+</head>
+<body>
+        <div class="show-login-btn">
+            <i class="fas fa-sign-in-alt"></i> Show Login Form <br><br>
+            <i class="fas fa-user-plus"></i> Show Registration Form
+        </div>
+
+        <!-- <div class="register-box">
+                <div class="hide-reg-btn"><i class="far fa-times-circle"></i></div>
+                <form class="register-form" action="index.html" method="POST">
+                    <h1>Welcome</h1>
+                        <input class="rtxtb" type="text" placeholder="First Name">
+                        <input class="rtxtb" type="text" placeholder="Last Name">
+                        <input class="rtxtb" type="email" placeholder="Email">
+                        <input class="rtxtb" type="text" placeholder="Password">
+                        <input class="reg-btn" type="submit" name="" value="Register">
+                </form>
+        </div> -->
+
+        <div class="login-box">
+                <div class="hide-login-btn"><i class="far fa-times-circle"></i></div>
+                    <form class="login-form" action="index.html" method="post">
+                        <h1>Welcome</h1>
+                         <input class="txtb" type="email"placeholder="Email">
+                         <input class="txtb" type="password" placeholder="Password">
+                         <input class="login-btn" type="submit" name="" value="Submit">
+                    </form>
+              </div>
+
+              <script type="text/javascript">
+                $(".show-login-btn").on("click",function(){
+                  $(".login-box").toggleClass("showed");
+                });
+              
+                $(".hide-login-btn").on("click",function(){
+                  $(".login-box").toggleClass("showed");
+                });
+              </script>
+
+    
+</body>
+</html>
