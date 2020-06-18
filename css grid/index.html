@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+
+    <!-- Internal CSS -->
+    <style>
+        .container{
+            display: grid;
+            grid-template: repeat(5,200px)/repeat(3,1fr);
+            grid-gap: 10px;
+            
+        }
+        div p{ 
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-size: 3rem;">Tic Tac Toe !!</h1>
+    <div class="container">
+        <div id="sec1"><p> </p></div>
+        <div id="sec2"><p> </p></div>
+        <div id="sec3"><p> </p></div>
+        <div id="sec4"><p> </p></div>
+        <div id="sec5"><p> </p></div>
+        <div id="sec6"><p> </p></div>
+        <div id="sec7"><p> </p></div>
+        <div id="sec8"><p> </p></div>
+        <div id="sec9"><p> </p></div>
+        
+       
+        <!-- <div>13</div> -->
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
